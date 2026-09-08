@@ -1,154 +1,107 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#050505">
-  <meta name="description" content="ORCA develops compact onboard autonomy for drones operating beyond GPS and communications.">
-  <title>Orca Tech</title>
-  <link rel="icon" href="assets/orca-logo-black.png">
-  <link rel="stylesheet" href="styles.css">
-  
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080808"><meta name="description" content="Orca Tech is a defense technology startup developing autonomous systems for environments beyond reliable GPS and communications.">
+  <title>Orca Tech — Autonomy beyond the signal</title>
+  <link rel="icon" href="assets/orca-logo-black.png"><link rel="stylesheet" href="redesign.css"><link rel="stylesheet" href="immersive.css">
   <!-- Vercel Web Analytics -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
   <script defer src="/_vercel/insights/script.js"></script>
-  
   <!-- Vercel Speed Insights -->
-  <script>
-    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-  </script>
+  <script>window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };</script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="progress" aria-hidden="true"><span></span></div>
+ <a class="skip" href="#main">Skip to content</a>
+ <div class="loader" aria-hidden="true"><span>ORCA TECH</span><i></i></div>
+ <header class="glass-nav">
+  <a class="brand" href="#top" aria-label="Orca Tech home">ORCA<span>TECH</span></a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#systems">Systems</a><a href="#direction">Direction</a></nav>
+  <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><i></i><i></i></button>
+  <nav id="mobile-nav" hidden aria-label="Mobile navigation"><a href="#approach">Approach</a><a href="#systems">Systems</a><a href="#direction">Direction</a><a href="#contact">Let’s talk ↗</a></nav>
+ </header>
+ <main id="main">
+  <section class="hero" id="top">
+   <div class="hero-media"><img src="assets/hero-terrain-drone.png" alt="Aircraft over rugged terrain" fetchpriority="high"></div>
+   <div class="hero-vignette"></div>
+   <div class="hero-title"><h1>Beyond<br>the <span>signal.</span></h1></div>
+   <div class="hero-bottom"><p>Autonomous systems.<br>For a world that won’t wait.</p><p>Orca Tech develops onboard autonomy<br>for defense systems operating beyond<br>reliable GPS and communications.</p><a href="#approach" class="scroll-link" aria-label="Explore our approach"><span>Explore</span><b aria-hidden="true">↓</b></a></div>
+   <div class="horizon" aria-hidden="true"><i></i></div>
+  </section>
 
-  <header class="site-header" id="header">
-    <a class="brand" href="#top" aria-label="ORCA home"><img class="brand-mark" src="assets/orca-logo-white.png" alt="" aria-hidden="true"><span>ORCA TECH</span></a>
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#platform">Platform</a><a href="#systems">Systems</a><a href="#roadmap">Roadmap</a><a href="#contact">Contact</a>
-    </nav>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav"><span>Menu</span><i></i><i></i></button>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-      <a href="#platform">Platform</a><a href="#systems">Systems</a><a href="#roadmap">Roadmap</a><a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <section class="signal-scene" id="approach">
+   <div class="signal-sticky">
+    <div class="assumptions" aria-label="Conditions cannot be assumed"><span>GPS available</span><span>Link maintained</span><span>Conditions unchanged</span></div>
+    <h2>The signal ends.<br><span>The thinking<br>shouldn’t.</span></h2>
+    <div class="signal-bottom"><span class="small-arrow" aria-hidden="true">↳</span><p>Waypoints follow a script. Autonomy has to read the world. We’re building systems that perceive their surroundings, estimate their own movement, and work toward decisions made onboard.</p></div>
+   </div>
+  </section>
 
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <img class="hero-image" src="assets/hero-terrain-drone.png" alt="A compact autonomous aircraft flying above dark rugged terrain at dusk">
-      <div class="hero-shade" aria-hidden="true"></div>
-      <canvas class="perception-canvas" id="perception-canvas" aria-hidden="true"></canvas>
-      <div class="hero-copy reveal">
-        <h1 id="hero-title">THE WORLD MOVES.<br>YOUR SYSTEM<br><em>MOVES WITH IT.</em></h1>
-        <p class="hero-sub">Onboard autonomy for drones operating beyond GPS and communications.</p>
-      </div>
-    </section>
+  <section class="module-story" id="systems" aria-labelledby="module-title">
+   <div class="module-stage">
+    <div class="module-heading"><h2 id="module-title">Autonomy.<br><span>Inside the box.</span></h2><p>Orca GPS-denied module<br><span>Modular integration concept</span></p></div>
+    <div class="module-visual"><img class="module-fallback" src="assets/module-closed.png" alt="Orca module in its closed enclosure"><canvas id="module-canvas" role="img" aria-label="Scroll-controlled module assembly: closed enclosure, exploded components, and reassembled enclosure"></canvas></div>
+    <div class="component-callouts" aria-label="Illustrated module components">
+     <div class="component component-shell"><b>Protective enclosure</b><span>A compact, modular package.</span><i></i></div>
+     <div class="component component-compute"><b>Onboard compute</b><span>Process observations locally.</span><i></i></div>
+     <div class="component component-vision"><b>Stereo vision</b><span>Features become motion estimates.</span><i></i></div>
+     <div class="component component-connect"><b>Sensor & platform interfaces</b><span>Connect sensing to the host system.</span><i></i></div>
+    </div>
+    <div class="module-caption"><p id="module-message">One module. A new frame of reference.</p><span class="module-scroll-cue">Scroll to look inside <span aria-hidden="true">↓</span></span></div>
+    <div class="module-timeline" aria-label="Assembly sequence"><span class="active">Integrated</span><span>Exploded</span><span>Ready to integrate</span><i></i></div>
+   </div>
+  </section>
 
-    <section class="thesis" id="platform" aria-labelledby="thesis-title">
-      <div class="thesis-lead reveal">
-        <h2 id="thesis-title">AUTONOMY STARTS<br>WHERE THE <em>SIGNAL ENDS.</em></h2>
-        <p>A vehicle cannot adapt if it depends on a perfect map, a persistent link, or a remote decision-maker. We are building compact systems that perceive, localize, and respond onboard.</p>
-      </div>
-      <p class="plug-message reveal">Designed as a plug-and-play autonomy layer for compatible airframes and mission systems.</p>
-      <div class="constraint-grid reveal">
-        <article><h3>GPS DENIED</h3><p>No reliable global position to inherit.</p></article>
-        <article><h3>NO COMMS</h3><p>No operator available to close the loop.</p></article>
-        <article><h3>WORLD CHANGES</h3><p>Light, texture, terrain, and obstacles move.</p></article>
-        <article><h3>SWaP LIMITED</h3><p>Every watt and gram must earn its place.</p></article>
-      </div>
-      <div class="orange-cut" aria-hidden="true"></div>
-    </section>
+  <section class="systems">
+   <div class="section-opening reveal"><h2>Intelligence.<br>Carried onboard.</h2><p>A compact autonomy layer.<br>From what the camera sees<br>to where the system goes.</p></div>
+   <article class="vision-chapter">
+    <div class="chapter-text reveal"><h3>Find a way.<br><span>Without GPS.</span></h3><p>Successive camera frames become a local estimate of movement. Our early visual-odometry prototypes track features to estimate speed and heading without a GPS fix.</p><span class="maturity">Visual odometry · Early prototype</span></div>
+    <figure class="vision-image reveal"><img src="assets/visual-odometry-orb-slam.png" alt="Visual odometry interface showing tracked camera features and a motion trajectory" loading="lazy"><figcaption>Movement becomes a local frame of reference.</figcaption></figure>
+   </article>
+   <article class="perception-chapter">
+    <div class="perception-image"><img src="assets/perception-infrared-detection.png" alt="Infrared image with detected objects outlined" loading="lazy"></div>
+    <div class="perception-shade"></div>
+    <div class="perception-text reveal"><h3>See more.<br><span>Understand more.</span></h3><p>Visible and infrared detection bring the surrounding scene into focus. Models tested against a YOLO baseline showed fewer false positives in our internal benchmarks.</p><span class="maturity">Perception · Internal testing</span></div>
+   </article>
+  </section>
 
-    <section class="capabilities" id="systems" aria-labelledby="systems-title">
-      <div class="cap-intro">
-        
-        <h2 id="systems-title" class="reveal">THREE SYSTEMS.<br><em>ONE LOCAL TRUTH.</em></h2>
-      </div>
+  <section class="platforms">
+   <h2 class="reveal">One autonomy layer.<br><span>More possibilities.</span></h2>
+   <div class="platform-words" aria-label="Platform integration direction"><span>Air.</span><span>Land.</span><span>Maritime.</span></div>
+   <p class="reveal">We’re building an autonomy layer for existing machines, starting with GPS-denied navigation. Integration across air, land, and maritime platforms is the direction.</p>
+   <div class="prototype-proof reveal"><h3>From the bench.<br>Onto the aircraft.</h3><div><p><b>V0</b> Jetson Nano with an IMX219 stereo camera.</p><p><b>V1</b> Quadcopter prototype with OAK-D Lite, Raspberry Pi 4, and Pixhawk.</p></div></div>
+  </section>
 
-      <article class="chapter chapter-one" data-chapter="01">
-        <div class="chapter-media media-visual-odometry"><img src="assets/visual-odometry-orb-slam.png" alt="ORB-SLAM3 visual odometry trajectory with an infrared live feed"></div>
-        <div class="chapter-content reveal">
-          <h3>VISUAL<br>ODOMETRY</h3>
-          <p>Localize against the world without inherited coordinates. Track movement from successive camera frames to maintain a local estimate of motion.</p>
-        </div>
-      </article>
+  <section class="decision" aria-labelledby="decision-heading">
+   <div class="decision-heading reveal"><h2 id="decision-heading">A shorter path<br>to a decision.</h2><p>The autonomy architecture we’re pursuing<br>keeps the loop inside the vehicle.</p></div>
+   <div class="decision-path" role="tablist" aria-label="Explore the onboard decision path">
+    <button role="tab" id="sense-tab" aria-selected="true" aria-controls="decision-panel" data-stage="0">Sense<span aria-hidden="true">↗</span></button>
+    <button role="tab" id="localize-tab" aria-selected="false" aria-controls="decision-panel" tabindex="-1" data-stage="1">Localize<span aria-hidden="true">↗</span></button>
+    <button role="tab" id="decide-tab" aria-selected="false" aria-controls="decision-panel" tabindex="-1" data-stage="2">Decide<span aria-hidden="true">↗</span></button>
+   </div>
+   <div id="decision-panel" role="tabpanel" aria-labelledby="sense-tab" tabindex="0"><span class="path-dot" aria-hidden="true"></span><p>Extract visual features and object cues from onboard sensing. Build a useful picture of the immediate environment.</p></div>
+  </section>
 
-      <article class="chapter chapter-two" data-chapter="02">
-        <div class="chapter-media media-perception-fused"><img src="assets/perception-infrared-detection.png" alt="Infrared perception model detecting people with bounding boxes"></div>
-        <div class="chapter-content reveal">
-          <h3>PERCEPTION<br>MODELS</h3>
-          <p>Fuse visible and infrared observations into actionable local context: objects, heat signatures, surfaces, clearances, and changes that matter to flight.</p>
-        </div>
-      </article>
+  <section class="direction" id="direction">
+   <div class="direction-intro reveal"><h2>Built in steps.<br><span>With a clear<br>direction.</span></h2><p>Our work begins with local navigation.<br>Adaptive sensing and mission-level decisions remain the road ahead.</p></div>
+   <ol class="roadmap">
+    <li class="reveal"><span class="phase-state">Current focus · Early prototype</span><h3>GPS-denied<br>navigation</h3><p>Localize and navigate through visual odometry, with a module designed for existing platforms.</p></li>
+    <li class="reveal"><span class="phase-state">Active development</span><h3>Perception-assisted<br>navigation</h3><p>Bring object and infrared detection into the navigation stack to add environmental context.</p></li>
+    <li class="future reveal"><span class="phase-state">Roadmap</span><h3>Adaptive<br>multi-sensor autonomy</h3><p>Switch between vision, radar, and other sensing strategies as operating conditions change.</p></li>
+    <li class="future reveal"><span class="phase-state">Vision</span><h3>Autonomous<br>decision-making</h3><p>Reduce operator load through more onboard decisions in denied and degraded environments.</p></li>
+   </ol>
+  </section>
 
-      <article class="chapter chapter-three" data-chapter="03">
-        <div class="chapter-media media-dashboard"><img src="assets/adaptive-autonomy-dashboard.jpg" alt="ORCA adaptive autonomy product dashboard"></div>
-        <div class="chapter-content reveal">
-          <h3>ADAPTIVE<br>AUTONOMY</h3>
-          <p>Change localization strategy and bounded flight behavior as conditions change without waiting for an external command.</p>
-        </div>
-      </article>
-
-      <article class="chapter chapter-four" data-chapter="04">
-        <div class="chapter-media media-plug-play"><img src="assets/modular-orca-hardware.png" alt="Modular ORCA autonomy hardware shown as an exploded assembly beside the assembled unit"></div>
-        <div class="chapter-content reveal">
-          <h3>PLUG<br>AND PLAY</h3>
-          <p>Integrate as a modular autonomy layer across compatible airframes, sensors, and mission systems without rebuilding the stack.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="architecture" aria-labelledby="architecture-title">
-      <div class="architecture-heading reveal"><h2 id="architecture-title">SENSE LOCALLY.<br><em>DECIDE ONBOARD.</em></h2><p>Explore the decision path. Each stage turns raw observation into a bounded flight action inside the vehicle.</p></div>
-      <div class="architecture-shell reveal">
-        <div class="architecture-nav" role="tablist" aria-label="Architecture stages">
-          <button role="tab" aria-selected="true" aria-controls="stage-panel" data-stage="0"><span>SENSOR<br>INPUT</span></button>
-          <button role="tab" aria-selected="false" aria-controls="stage-panel" data-stage="1"><span>ONBOARD<br>PERCEPTION</span></button>
-          <button role="tab" aria-selected="false" aria-controls="stage-panel" data-stage="2"><span>LOCAL<br>STATE</span></button>
-          <button role="tab" aria-selected="false" aria-controls="stage-panel" data-stage="3"><span>FLIGHT<br>DECISION</span></button>
-        </div>
-        <div class="architecture-panel" id="stage-panel" role="tabpanel" tabindex="0">
-          <div class="module-render" aria-hidden="true"><div class="module-core"><span>OT</span><i></i></div><div class="module-ring ring-a"></div><div class="module-ring ring-b"></div></div>
-          <div class="stage-copy"><h3 id="stage-title">Sensor Input</h3><p id="stage-description">Capture synchronized onboard observations at the edge.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="roadmap" id="roadmap" aria-labelledby="roadmap-title">
-      <div class="roadmap-sticky">
-        <h2 id="roadmap-title" class="reveal"><em>THE PATH AHEAD</em></h2>
-        <p class="reveal">A deliberate progression from local navigation to mission-level decisions. Current work is early-stage; milestones describe direction, not deployed capability.</p>
-      </div>
-      <div class="roadmap-track"><div class="roadmap-marker" aria-hidden="true"><span class="roadmap-dot"></span><span class="roadmap-label">CURRENT</span></div><span class="sr-only" aria-live="polite" id="roadmap-status">Current roadmap stage: GPS-denied navigation</span><ol class="roadmap-list">
-        <li class="current reveal"><h3>GPS-DENIED<br>NAVIGATION</h3><p>Establish local motion and position from onboard sensing.</p></li>
-        <li class="reveal"><h3>AI-ASSISTED<br>NAVIGATION</h3><p>Use perception to improve route context and obstacle response.</p></li>
-        <li class="reveal"><h3>ADAPTIVE MULTISENSOR<br>AUTONOMY</h3><p>Shift sensing and localization modes as conditions change.</p></li>
-        <li class="reveal"><h3>MISSION-LEVEL<br>DECISION-MAKING</h3><p>Make bounded mission choices using local state and objectives.</p></li>
-      </ol></div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact-scan" aria-hidden="true"></div>
-      <h2 id="contact-title" class="reveal">BUILT FOR  <br><em>AUTONOMY</em></h2>
-      <div class="contact-bottom reveal">
-        <p>For technical partnerships, program conversations, and early-stage collaboration.</p>
-        <form class="contact-form" id="contact-form">
-          <label for="contact-email">Leave your email and we’ll be in touch.</label>
-          <div><input id="contact-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required><button type="submit">SEND <span>↗</span></button></div>
-          <p class="form-status" id="form-status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <a class="brand" href="#top" aria-label="Back to top"><span>ORCA</span></a>
-    <span>© 2026 ORCA</span>
-  </footer>
-  <script src="script.js"></script>
+  <section class="contact" id="contact">
+   <div class="contact-top reveal"><h2>The next move<br><span>starts here.</span></h2><p>For technical partnerships,<br>platform integration, and<br>early-stage collaboration.</p></div>
+   <details class="contact-details"><summary>Start a technical conversation <span aria-hidden="true">↗</span></summary><p>Our direct contact channel will be available here soon.</p></details>
+   <div class="footer-word" aria-hidden="true">ORCA</div>
+   <footer><a href="#top">Orca Tech</a><span>Autonomous systems. Defense technology.</span><span>© 2026</span><a href="#top">Back to top ↑</a></footer>
+  </section>
+ </main>
+ <script src="redesign.js"></script>
+ <script src="immersive.js"></script>
 </body>
 </html>
-
